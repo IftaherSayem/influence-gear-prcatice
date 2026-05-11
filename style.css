@@ -10,6 +10,11 @@
 
 
 /* header realted style */
+
+.hide-bar{
+    display: none;
+}
+
 .nav-container{
     max-width: 1110px;
     width: 100%;
@@ -36,5 +41,30 @@
     text-decoration: none;
     color: black;
     text-align: center;
-    font-weight: 500px;
+    font-weight: 500;
+}
+
+/* responsive media query */
+@media screen and (max-width:576px) {
+    .hide{
+        display: none;
+    }
+
+    .hide-bar{
+        display: block;
+    }
+
+    .navbar h2{
+        font-size: 16px;
+        white-space: nowrap;
+    }
+    .menu-list ul{
+        gap: 0;
+        padding-left: 0;
+    }
+    .navbar{
+        align-items: center;
+        width: 100%;
+    }
+
 }
