@@ -23,7 +23,7 @@
 }
 
 .nav-container{
-    max-width: 1110px;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     background-color: white;
@@ -52,7 +52,7 @@
 }
 
 .hero-container{
-    max-width: 1110px;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     align-items: center;
@@ -81,6 +81,84 @@
     justify-content: space-around;
     padding: 36px 62px;
 }
+
+/* Main related styles */
+
+.my-collection{
+    max-width: 1040px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.collection-title{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    padding-bottom: 50px;
+}
+
+.card{
+    width: 329px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 70px 1px rgb(214, 212, 212);
+}
+
+.card-img{
+    display: flex;
+    justify-content: center;
+    margin: 16px 0px;
+    border-radius: 5px;
+}
+
+.card h3{
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin: 16px 0px 16px 16px;
+}
+
+.card span{
+    font-family: "Inter", sans-serif;
+    font-size: 1.50rem;
+    color: #000000;
+    margin: 16px 0px 16px 16px;
+}
+
+.rating{
+    margin: 0px 0px 16px 16px;
+}
+
+.rating span{
+    margin: 0;
+    color: goldenrod;
+}
+
+.card p{
+    font-size: 0.87rem;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    letter-spacing: 1.83%;
+    line-height: 143%;
+    margin: 6px 0px 27px 16px;
+    color: gray;
+}
+
+.see-more{
+    color: rgba(224,44,109,87);
+    font-weight: bold;
+    position: absolute;
+    top: 2470px;
+    right: 230px;
+    cursor: pointer;
+}
+
 /* responsive media query */
 @media screen and (max-width:576px) {
     .hide{
@@ -136,5 +214,14 @@
     .ecom-app{
         display: grid;
         grid-template-columns: repeat(4,1fr);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+        padding-bottom: 50px;
     }
 }
