@@ -228,6 +228,7 @@
         place-items: center;
         gap: 30px;
         padding-bottom: 50px;
+        margin-left: 15px;
     }
 
     .collection-title {
